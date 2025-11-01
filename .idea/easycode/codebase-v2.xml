@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/src/clients/UDPClient.java;C:/TP/DAR/TP4/src/server/UDPSever.java;C:/TP/DAR/TP4/src/Main.java" />
+    <option name="forceFullIndex" value="false" />
+    <option name="fileSummaryMaps" value="{&quot;C:/TP/DAR/TP4&quot;:&quot;{\&quot;/src/clients/UDPClient.java\&quot;:\&quot;Error generating summary after max retries\&quot;,\&quot;/src/server/UDPSever.java\&quot;:\&quot;Error generating summary after max retries\&quot;,\&quot;/src/Main.java\&quot;:\&quot;Error generating summary after max retries\&quot;}&quot;}" />
+    <option name="fileSkeletonMaps" value="{&quot;C:/TP/DAR/TP4&quot;:&quot;{\&quot;/src/clients/UDPClient.java\&quot;:{\&quot;file_path\&quot;:\&quot;/src/clients/UDPClient.java\&quot;,\&quot;file_name\&quot;:\&quot;UDPClient.java\&quot;,\&quot;methods\&quot;:[]},\&quot;/src/server/UDPSever.java\&quot;:{\&quot;file_path\&quot;:\&quot;/src/server/UDPSever.java\&quot;,\&quot;file_name\&quot;:\&quot;UDPSever.java\&quot;,\&quot;methods\&quot;:[{\&quot;method_name\&quot;:\&quot;main\&quot;,\&quot;method_parameters\&quot;:\&quot;(String[] args)\&quot;,\&quot;parameter_declarations\&quot;:[{\&quot;type\&quot;:\&quot;\&quot;,\&quot;name\&quot;:\&quot;args\&quot;}],\&quot;return_type\&quot;:\&quot;void\&quot;,\&quot;scope\&quot;:[[11,4],[45,1]]}]},\&quot;/src/Main.java\&quot;:{\&quot;file_path\&quot;:\&quot;/src/Main.java\&quot;,\&quot;file_name\&quot;:\&quot;Main.java\&quot;,\&quot;methods\&quot;:[]}}&quot;}" />
+  </component>
+</project>
