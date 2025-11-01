@@ -25,12 +25,11 @@ public class UDPServer {
                 String received = new String(packet.getData(), 0, packet.getLength());
                 SocketAddress clientAddress = packet.getSocketAddress();
 
-                // Enregistrer automatiquement les nouveaux clients
                 clients.add(clientAddress);
 
-                System.out.println("📩 De " + clientAddress + " -> " + received);
+                System.out.println(" De " + clientAddress + " -> " + received);
 
-                // Diffuser à tous sauf à l'expéditeur
+                // envoi à tous sauf à l'expéditeur
                 for (SocketAddress addr : clients) {
                     if (!addr.equals(clientAddress)) {
                         byte[] msg = received.getBytes();
@@ -40,7 +39,7 @@ public class UDPServer {
                 }
             }
         } catch (IOException e) {
-            System.err.println("❌ Erreur serveur : " + e.getMessage());
+            System.err.println(" Erreur serveur : " + e.getMessage());
         }
     }
 }

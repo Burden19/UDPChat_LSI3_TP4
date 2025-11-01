@@ -21,9 +21,9 @@ public class UDPClient {
             int serverPort = 1234;
 
             DatagramSocket socket = new DatagramSocket();
-            System.out.println("🟣 Connecté au chat UDP sur le port " + serverPort);
+            System.out.println(" Connecté au chat UDP sur le port " + serverPort);
 
-            // Thread pour recevoir les messages en continu
+            // Thread pour le reçoit
             Thread receiver = new Thread(() -> {
                 byte[] buffer = new byte[1024];
                 DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
@@ -31,7 +31,7 @@ public class UDPClient {
                     while (true) {
                         socket.receive(packet);
                         String message = new String(packet.getData(), 0, packet.getLength());
-                        System.out.println("\n💬 " + message);
+                        System.out.println("\n " + message);
                         System.out.print("> ");
                     }
                 } catch (IOException e) {
@@ -42,12 +42,12 @@ public class UDPClient {
             receiver.setDaemon(true);
             receiver.start();
 
-            // Thread principal pour envoyer les messages
+            // Thread principal pour l'envoi
             while (true) {
                 System.out.print("> ");
                 String msg = sc.nextLine();
                 if (msg.equalsIgnoreCase("exit")) {
-                    System.out.println("👋 Vous quittez le chat...");
+                    System.out.println(" Vous quittez le chat...");
                     break;
                 }
 

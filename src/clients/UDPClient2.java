@@ -21,7 +21,7 @@ public class UDPClient2 {
             int serverPort = 1234;
 
             DatagramSocket socket = new DatagramSocket();
-            System.out.println("🟣 Connecté au chat UDP sur le port " + serverPort);
+            System.out.println(" Connecté au chat UDP sur le port " + serverPort);
 
             // Thread pour recevoir les messages en continu
             Thread receiver = new Thread(() -> {
@@ -31,7 +31,7 @@ public class UDPClient2 {
                     while (true) {
                         socket.receive(packet);
                         String message = new String(packet.getData(), 0, packet.getLength());
-                        System.out.println("\n💬 " + message);
+                        System.out.println("\n " + message);
                         System.out.print("> ");
                     }
                 } catch (IOException e) {
@@ -47,7 +47,7 @@ public class UDPClient2 {
                 System.out.print("> ");
                 String msg = sc.nextLine();
                 if (msg.equalsIgnoreCase("exit")) {
-                    System.out.println("👋 Vous quittez le chat...");
+                    System.out.println(" Vous quittez le chat...");
                     break;
                 }
 
@@ -63,7 +63,7 @@ public class UDPClient2 {
             sc.close();
 
         } catch (IOException e) {
-            System.err.println("❌ Erreur client : " + e.getMessage());
+            System.err.println(" Erreur client : " + e.getMessage());
         }
     }
 }
